@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap; 
+    margin: 0px;
+    padding: 0px; 
+}
+
+.border {
+    border: solid 1px black;
+}
+ 
+ 
+ /* The side navigation menu */
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fff; /* White*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /*padding-top: 60px;*/ /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  
+/* The navigation menu links */
+.sidenav h2 {
+    padding: 15px 8px 15px 57px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 15px 8px 15px 52px;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* white-space: nowrap;   */
+}
+  
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #818181;
+}
+    
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .menubtn {
+    box-shadow: 5px 0px 5px #f1f1f1;
+}
+  
+
+
+
+#openbtn {
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-image: url('../images/32/006-menu-button.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    float: left;
+    cursor: pointer;
+}
+
+#openbtn:hover {
+    border: solid 1px #f1f1f1;
+}
+
+
+#interface {
+    background-color: #cecece;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* padding: 20px; */
+}
+
+#company-title {
+    width: 100%;
+    height: 50px;
+    box-shadow: 5px 5px 5px #cecece;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18pt;
+    background-color: white;
+}
+
+#company-img {
+    width: 100%;
+    min-height: 300px; 
+    background-image: url('../images/comp-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+#company-desc {
+    background-color: white;
+    white-space: initial;
+    margin-top: 5px;
+    padding: 15px;
+    text-align: justify;
+}
+
+#company-desc p {
+    margin: 0px;
+}
+  
+section {
+    margin-top: 5px;
+    
+}
+
+#pizza-title {
+    margin: 0px;
+    font-size: 15pt;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+section .list-pizza {
+    display: block;
+    margin: 5px 0px;
+    height: 150px;
+    padding-left: 180px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-color: white;
+}
+
+.list-pizza h3 {
+    margin: 0px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.list-pizza p {
+    margin: 5px;
+    font-size: 12pt;
+    white-space: normal;
+    color: #111;
+}
+
+.list-pizza span {
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    right: 20px;
+    background-color: #818181;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+@media screen and (max-width: 500px) {
+    #company-img {
+        min-height:135px;
+        background-size: contain;
+    }
+
+    section .list-pizza {
+        padding-left: 90px;
+    }
+    
+    .list-pizza p {
+        margin-left: 50px;
+    }
+
+}

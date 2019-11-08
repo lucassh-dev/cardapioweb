@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cardápio Web</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script type="text/javascript" src="javascript/script.js"></script>
+</head>
+<body>
+    <div id="interface">
+        <div id="mySidenav" class="sidenav">
+            <h2>Categorias
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> </h2>
+            <a href="#" class="menubtn" style="background-image: url('images/32/001-pizza.png')">Pizzas</a>
+            <a href="#" class="menubtn" style="background-image: url('images/32/002-spaghetti.png')">Massas</a>
+            <a href="#" class="menubtn" style="background-image: url('images/32/003-beer.png')">Bebidas</a>
+            <a href="#" class="menubtn" style="background-image: url('images/32/004-pancakes.png')">Sobremesas</a>
+            <a href="#" class="menubtn" style="background-image: url('images/32/005-announcement.png')">Ofertas do Dia</a>
+        </div>
+                  
+        <!-- Use any element to open the sidenav -->
+        <!-- <button onclick="openNav()" style="cursor:pointer;" id="openbtn">
+            <img src="images/32/006-menu-button.png" alt="Menu">
+        </button> -->
+        <!-- <span onclick="openNav()">Open</span> -->
+                  
+        <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+        <span onclick="openNav()" id="openbtn"></span>
+        <div id="main">
+            <header>
+                <div id="company-title">Expresso Pizza</div>
+                <div id="company-img"></div>
+                <div id="company-desc">
+                    <p>
+                        Um estilo de Pizza considerado mais elaborado e com muito sabor. Espaço aconchegante para que você se sinta em casa.
+                        Atendimento às Sextas-feiras, Sábados e Domingos, das 18h30 às 23h45.
+                        Avenida Carapinima, nº xx - Benfica.
+                        (85) 99999-9494 - WhatsApp / (85) 3268.9999 - Telefone.
+                    </p>
+                </div>
+
+                
+            </header>
+            <section>
+                <h1 id="pizza-title">Pizzas</h1>
+                <figure class="list-pizza" style="background-image: url('images/pizzas/04 - Moda da Casa.png')">
+                    <h3>Moda da Casa</h3>
+                    <p>Queijo Mussarela, Calabresa, Frango Desfiado e Cebola</p>
+                    <span>R$ 16,99</span>
+                </figure>
+                <figure class="list-pizza" style="background-image: url('images/pizzas/01 - Mussarela.png')">
+                    <h3>Mussarela</h3>
+                    <p>Queijo Mussarela, Orégano e Cebola</p>
+                    <span>R$ 15,99</span>
+                </figure>
+                <figure class="list-pizza" style="background-image: url('images/pizzas/02 - Calabresa.png')">
+                    <h3>Calabresa</h3>
+                    <p>Calabresa, Orégano e Cebola</p>
+                    <span>R$ 11,99</span>
+                </figure>
+            </section>
+
+        </div> 
+    </div>
+</body>
+</html>
